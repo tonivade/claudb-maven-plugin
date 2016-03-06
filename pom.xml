@@ -17,6 +17,17 @@
 		</repository>
 	</repositories>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-releases</id>
+			<url>http://garagemarket.com.es/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-snapshots</id>
+			<url>http://garagemarket.com.es/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -59,10 +70,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		  <groupId>org.mockito</groupId>
-		  <artifactId>mockito-core</artifactId>
-		  <version>1.10.19</version>
-		  <scope>test</scope>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
