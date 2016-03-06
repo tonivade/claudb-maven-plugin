@@ -6,31 +6,31 @@ test with redis aplications.
 ## Usage
 
 ```
-&lt;plugins&gt;
-    &lt;plugin&gt;
-        &lt;groupId&gt;tonivade&lt;/groupId&gt;
-        &lt;artifactId&gt;tinydb-maven-plugin&lt;/artifactId&gt;
-        &lt;executions&gt;
-            &lt;execution&gt;
-                &lt;id&gt;tinydb-run&lt;/id&gt;
-                &lt;phase&gt;pre-integration-test&lt;/phase&gt;
-                &lt;goals&gt;
-                    &lt;goal&gt;run&lt;/goal&gt;
-                &lt;/goals&gt;
-                &lt;configuration&gt;
-                    &lt;port&gt;6379&lt;/port&gt;
-                &lt;/configuration&gt;
-            &lt;/execution&gt;
-            &lt;execution&gt;
-                &lt;id&gt;tinydb-stop&lt;/id&gt;
-                &lt;phase&gt;post-integration-test&lt;/phase&gt;
-                &lt;goals&gt;
-                    &lt;goal&gt;stop&lt;/goal&gt;
-                &lt;/goals&gt;
-            &lt;/execution&gt;
-        &lt;/executions&gt;
-    &lt;/plugin&gt;
-&lt;/plugins&gt;
+<plugins>
+    <plugin>
+        <groupId>tonivade</groupId>
+        <artifactId>tinydb-maven-plugin</artifactId>
+        <executions>
+            <execution>
+                <id>tinydb-run</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                    <goal>run</goal>
+                </goals>
+                <configuration>
+                    <port>6379</port>
+                </configuration>
+            </execution>
+            <execution>
+                <id>tinydb-stop</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                    <goal>stop</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
 ```
 
 ## License
