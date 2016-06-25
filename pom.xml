@@ -19,11 +19,11 @@
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>nexus-releases</id>
+			<id>nexus-snapshots</id>
 			<url>http://garagemarket.com.es/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<repository>
-			<id>nexus-snapshots</id>
+			<id>nexus-releases</id>
 			<url>http://garagemarket.com.es/nexus/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
