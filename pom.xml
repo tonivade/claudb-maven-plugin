@@ -176,4 +176,27 @@
 			</build>
 		</profile>
 	</profiles>
+	<scm>
+		<url>https://github.com/tonivade/tinydb-maven-plugin</url>
+		<connection>scm:https://github.com/tonivade/tinydb-maven-plugin.git</connection>
+		<developerConnection>scm:git://github.com/tonivade/tinydb-maven-plugin.git</developerConnection>
+	</scm>
+	<name>TinyDB Maven Plugin</name>
+	<url>https://github.com/tonivade/tinydb-maven-plugin</url>
+	<description>TinyDB server plugin for maven, usuful for integration tests</description>
+	<inceptionYear>2016</inceptionYear>
+	<licenses>
+		<license>
+			<name>The MIT Licence (MIT)</name>
+			<url>https://github.com/tonivade/tinydb-maven-plugin/blob/master/LICENSE</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>tonivade</id>
+			<name>Antonio Muñoz</name>
+			<email>antoniogmc@gmail.com</email>
+		</developer>
+	</developers>
 </project>
