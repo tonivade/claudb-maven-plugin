@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.tonivade</groupId>
 	<artifactId>tinydb-maven-plugin</artifactId>
-	<version>0.2.0</version>
+	<version>0.2.1</version>
 	<packaging>maven-plugin</packaging>
 
 	<repositories>
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>com.github.tonivade</groupId>
 			<artifactId>tinydb</artifactId>
-			<version>0.7.0</version>
+			<version>0.7.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -144,13 +144,11 @@
 						</executions>
 					</plugin>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
+						<groupId>org.kohsuke</groupId>
+						<artifactId>pgp-maven-plugin</artifactId>
+						<version>1.1</version>
 						<executions>
 							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
 								<goals>
 									<goal>sign</goal>
 								</goals>
