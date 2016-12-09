@@ -5,5 +5,5 @@ jdk:
 branches:
  only:
   - develop
-install: ./gradlew clean build
-script: ./gradlew test
+install: mvn clean install -DskipTests=true
+script: mvn verify
