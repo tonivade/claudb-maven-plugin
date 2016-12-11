@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
-import tonivade.db.TinyDB;
+import com.github.tonivade.tinydb.TinyDB;
 
 public class StopTinyDBMojoTest extends AbstractMojoTestCase {
 
@@ -29,5 +29,4 @@ public class StopTinyDBMojoTest extends AbstractMojoTestCase {
 
         verify(tinyDB).stop();
     }
-
 }

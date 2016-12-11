@@ -13,7 +13,7 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
-import tonivade.db.TinyDB;
+import com.github.tonivade.tinydb.TinyDB;
 
 @Mojo(name = "run", defaultPhase = LifecyclePhase.NONE)
 public class RunTinyDBMojo extends AbstractMojo {
@@ -34,5 +34,4 @@ public class RunTinyDBMojo extends AbstractMojo {
 
         getPluginContext().put(TINYDB_SERVER, tinyDB);
     }
-
 }
