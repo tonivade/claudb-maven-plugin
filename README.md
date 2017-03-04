@@ -8,7 +8,7 @@ test with redis aplications.
 ```
 <plugins>
     <plugin>
-        <groupId>tonivade</groupId>
+        <groupId>com.github.tonivade</groupId>
         <artifactId>tinydb-maven-plugin</artifactId>
         <executions>
             <execution>

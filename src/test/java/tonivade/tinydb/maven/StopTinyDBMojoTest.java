@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
+ * Copyright (c) 2016-2017, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
  * Distributed under the terms of the MIT License
  */
 package tonivade.tinydb.maven;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
-import tonivade.db.TinyDB;
+import com.github.tonivade.tinydb.TinyDB;
 
 public class StopTinyDBMojoTest extends AbstractMojoTestCase {
 
@@ -29,5 +29,4 @@ public class StopTinyDBMojoTest extends AbstractMojoTestCase {
 
         verify(tinyDB).stop();
     }
-
 }

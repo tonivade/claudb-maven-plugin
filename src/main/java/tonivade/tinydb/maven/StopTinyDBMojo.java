@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
+ * Copyright (c) 2016-2017, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
  * Distributed under the terms of the MIT License
  */
 package tonivade.tinydb.maven;
@@ -12,7 +12,7 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 
-import tonivade.db.TinyDB;
+import com.github.tonivade.tinydb.TinyDB;
 
 @Mojo(name = "stop", defaultPhase = LifecyclePhase.NONE)
 public class StopTinyDBMojo extends AbstractMojo {
@@ -28,5 +28,4 @@ public class StopTinyDBMojo extends AbstractMojo {
             getLog().warn("no server found");
         }
     }
-
 }

@@ -1,0 +1,9 @@
+sudo: required
+language: java
+jdk:
+  - oraclejdk8
+branches:
+ only:
+  - develop
+install: mvn clean install -DskipTests=true
+script: mvn verify
