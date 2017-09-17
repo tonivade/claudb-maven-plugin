@@ -2,12 +2,15 @@
  * Copyright (c) 2016-2017, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
  * Distributed under the terms of the MIT License
  */
-package tonivade.tinydb.maven;
+package com.github.tonivade.tinydb.maven;
 
 import java.io.File;
 import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
+
+import com.github.tonivade.tinydb.maven.RunTinyDBMojo;
+import com.github.tonivade.tinydb.maven.TinyDBMojo;
 
 public class RunTinyDBMojoTest extends AbstractMojoTestCase {
 

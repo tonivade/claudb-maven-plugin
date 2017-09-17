@@ -2,7 +2,7 @@
  * Copyright (c) 2016-2017, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
  * Distributed under the terms of the MIT License
  */
-package tonivade.tinydb.maven;
+package com.github.tonivade.tinydb.maven;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -13,6 +13,8 @@ import java.util.HashMap;
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
 import com.github.tonivade.tinydb.TinyDB;
+import com.github.tonivade.tinydb.maven.StopTinyDBMojo;
+import com.github.tonivade.tinydb.maven.TinyDBMojo;
 
 public class StopTinyDBMojoTest extends AbstractMojoTestCase {
 
