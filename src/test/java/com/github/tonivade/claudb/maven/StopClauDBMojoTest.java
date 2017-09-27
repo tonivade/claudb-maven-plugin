@@ -2,7 +2,7 @@
  * Copyright (c) 2016-2017, Antonio Gabriel Muñoz Conejo <antoniogmc at gmail dot com>
  * Distributed under the terms of the MIT License
  */
-package com.github.tonivade.tinydb.maven;
+package com.github.tonivade.claudb.maven;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -12,23 +12,21 @@ import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
-import com.github.tonivade.tinydb.TinyDB;
-import com.github.tonivade.tinydb.maven.StopTinyDBMojo;
-import com.github.tonivade.tinydb.maven.TinyDBMojo;
+import com.github.tonivade.claudb.ClauDB;
 
-public class StopTinyDBMojoTest extends AbstractMojoTestCase {
+public class StopClauDBMojoTest extends AbstractMojoTestCase {
 
     public void testExecute() throws Exception {
         File pom = getTestFile("src/test/resources/test-pom.xml");
 
-        StopTinyDBMojo stop = (StopTinyDBMojo) lookupMojo("stop", pom);
+        StopClauDBMojo stop = (StopClauDBMojo) lookupMojo("stop", pom);
 
-        TinyDB tinyDB = mock(TinyDB.class);
+        ClauDB claudb = mock(ClauDB.class);
         stop.setPluginContext(new HashMap<>());
-        stop.getPluginContext().put(TinyDBMojo.TINYDB_SERVER, tinyDB);
+        stop.getPluginContext().put(ClauDBMojo.CLAUDB_SERVER, claudb);
 
         stop.execute();
 
-        verify(tinyDB).stop();
+        verify(claudb).stop();
     }
 }

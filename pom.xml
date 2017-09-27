@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.tonivade</groupId>
-  <artifactId>tinydb-maven-plugin</artifactId>
-  <version>0.10.0-SNAPSHOT</version>
+  <artifactId>claudb-maven-plugin</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
   
   <properties>
@@ -39,8 +39,8 @@
     </dependency>
     <dependency>
       <groupId>com.github.tonivade</groupId>
-      <artifactId>tinydb</artifactId>
-      <version>0.14.0-SNAPSHOT</version>
+      <artifactId>claudb</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -108,7 +108,7 @@
         <version>3.5</version>
         <configuration>
           <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
-          <goalPrefix>tinydb</goalPrefix>
+          <goalPrefix>claudb</goalPrefix>
         </configuration>
         <executions>
           <execution>
@@ -208,18 +208,18 @@
     </profile>
   </profiles>
   <scm>
-    <url>https://github.com/tonivade/tinydb-maven-plugin</url>
-    <connection>scm:https://github.com/tonivade/tinydb-maven-plugin.git</connection>
-    <developerConnection>scm:git://github.com/tonivade/tinydb-maven-plugin.git</developerConnection>
+    <url>https://github.com/tonivade/claudb-maven-plugin</url>
+    <connection>scm:https://github.com/tonivade/claudb-maven-plugin.git</connection>
+    <developerConnection>scm:git://github.com/tonivade/claudb-maven-plugin.git</developerConnection>
   </scm>
-  <name>TinyDB Maven Plugin</name>
-  <url>https://github.com/tonivade/tinydb-maven-plugin</url>
-  <description>TinyDB server plugin for maven, usuful for integration tests</description>
+  <name>ClauDB Maven Plugin</name>
+  <url>https://github.com/tonivade/claudb-maven-plugin</url>
+  <description>ClauDB server plugin for maven, usuful for integration tests</description>
   <inceptionYear>2016</inceptionYear>
   <licenses>
     <license>
       <name>The MIT Licence (MIT)</name>
-      <url>https://github.com/tonivade/tinydb-maven-plugin/blob/master/LICENSE</url>
+      <url>https://github.com/tonivade/claudb-maven-plugin/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>

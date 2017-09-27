@@ -11,8 +11,8 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>tonivade</groupId>
-				<artifactId>tinydb-maven-plugin</artifactId>
+				<groupId>com.github.tonivade</groupId>
+				<artifactId>claudb-maven-plugin</artifactId>
 				<configuration>
 				</configuration>
 			</plugin>
