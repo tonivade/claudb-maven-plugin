@@ -14,6 +14,7 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
 import com.github.tonivade.claudb.ClauDB;
+import com.github.tonivade.resp.RespServer;
 
 @Mojo(name = "run", defaultPhase = LifecyclePhase.NONE)
 public class RunClauDBMojo extends AbstractMojo {
@@ -29,9 +30,8 @@ public class RunClauDBMojo extends AbstractMojo {
     public void execute() throws MojoExecutionException, MojoFailureException {
         getLog().info("Starting claudb server at port: " + port);
 
-        ClauDB claudb = new ClauDB("localhost", port);
-        claudb.start();
+        RespServer server = new RespServer(new ClauDB("localhost", port));
 
-        getPluginContext().put(CLAUDB_SERVER, claudb);
+        getPluginContext().put(CLAUDB_SERVER, server);
     }
 }

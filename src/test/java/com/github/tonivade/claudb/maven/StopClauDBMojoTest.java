@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
-import com.github.tonivade.claudb.ClauDB;
+import com.github.tonivade.resp.RespServer;
 
 public class StopClauDBMojoTest extends AbstractMojoTestCase {
 
@@ -21,12 +21,12 @@ public class StopClauDBMojoTest extends AbstractMojoTestCase {
 
         StopClauDBMojo stop = (StopClauDBMojo) lookupMojo("stop", pom);
 
-        ClauDB claudb = mock(ClauDB.class);
+        RespServer server = mock(RespServer.class);
         stop.setPluginContext(new HashMap<>());
-        stop.getPluginContext().put(ClauDBMojo.CLAUDB_SERVER, claudb);
+        stop.getPluginContext().put(ClauDBMojo.CLAUDB_SERVER, server);
 
         stop.execute();
 
-        verify(claudb).stop();
+        verify(server).stop();
     }
 }
