@@ -30,7 +30,7 @@ public class RunClauDBMojo extends AbstractMojo {
     public void execute() throws MojoExecutionException, MojoFailureException {
         getLog().info("Starting claudb server at port: " + port);
 
-        RespServer server = new RespServer(new ClauDB("localhost", port));
+        RespServer server = ClauDB.builder().port(port).build();
 
         getPluginContext().put(CLAUDB_SERVER, server);
     }
