@@ -31,6 +31,7 @@ public class RunClauDBMojo extends AbstractMojo {
         getLog().info("Starting claudb server at port: " + port);
 
         RespServer server = ClauDB.builder().port(port).build();
+        server.start();
 
         getPluginContext().put(CLAUDB_SERVER, server);
     }

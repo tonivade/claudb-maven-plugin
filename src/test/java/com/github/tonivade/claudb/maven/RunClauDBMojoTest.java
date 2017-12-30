@@ -19,7 +19,7 @@ public class RunClauDBMojoTest extends AbstractMojoTestCase {
 
         RunClauDBMojo run = (RunClauDBMojo) lookupMojo("run", pom);
 
-        run.setPort(12345);;
+        run.setPort(12345);
         run.setPluginContext(new HashMap<>());
         run.execute();
 
