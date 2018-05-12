@@ -8,8 +8,8 @@
   
   <properties>
     <maven.version>3.5.0</maven.version>
-    <junit.jupiter.version>5.0.2</junit.jupiter.version>
-    <junit.vintage.version>4.12.2</junit.vintage.version>
+    <junit.jupiter.version>5.2.0</junit.jupiter.version>
+    <junit.vintage.version>5.2.0</junit.vintage.version>
   </properties>
 
   <repositories>
