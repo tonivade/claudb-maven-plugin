@@ -6,6 +6,6 @@ package com.github.tonivade.claudb.maven;
 
 public interface ClauDBMojo {
 
-    String CLAUDB_SERVER = "claudb-server";
+  String CLAUDB_SERVER = "claudb-server";
 
 }

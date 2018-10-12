@@ -14,15 +14,15 @@ import com.github.tonivade.claudb.maven.ClauDBMojo;
 
 public class RunClauDBMojoTest extends AbstractMojoTestCase {
 
-    public void testExecute() throws Exception {
-        File pom = getTestFile("src/test/resources/test-pom.xml");
+  public void testExecute() throws Exception {
+    File pom = getTestFile("src/test/resources/test-pom.xml");
 
-        RunClauDBMojo run = (RunClauDBMojo) lookupMojo("run", pom);
+    RunClauDBMojo run = (RunClauDBMojo) lookupMojo("run", pom);
 
-        run.setPort(12345);
-        run.setPluginContext(new HashMap<>());
-        run.execute();
+    run.setPort(12345);
+    run.setPluginContext(new HashMap<>());
+    run.execute();
 
-        assertNotNull(run.getPluginContext().get(ClauDBMojo.CLAUDB_SERVER));
-    }
+    assertNotNull(run.getPluginContext().get(ClauDBMojo.CLAUDB_SERVER));
+  }
 }

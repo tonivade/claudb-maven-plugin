@@ -19,20 +19,20 @@ import com.github.tonivade.resp.RespServer;
 @Mojo(name = "run", defaultPhase = LifecyclePhase.NONE)
 public class RunClauDBMojo extends AbstractMojo {
 
-    @Parameter(property = "claudb.port", defaultValue = "7081")
-    private Integer port;
+  @Parameter(property = "claudb.port", defaultValue = "7081")
+  private Integer port;
 
-    public void setPort(Integer port) {
-        this.port = port;
-    }
+  public void setPort(Integer port) {
+    this.port = port;
+  }
 
-    @Override
-    public void execute() throws MojoExecutionException, MojoFailureException {
-        getLog().info("Starting claudb server at port: " + port);
+  @Override
+  public void execute() throws MojoExecutionException, MojoFailureException {
+    getLog().info("Starting claudb server at port: " + port);
 
-        RespServer server = ClauDB.builder().port(port).build();
-        server.start();
+    RespServer server = ClauDB.builder().port(port).build();
+    server.start();
 
-        getPluginContext().put(CLAUDB_SERVER, server);
-    }
+    getPluginContext().put(CLAUDB_SERVER, server);
+  }
 }

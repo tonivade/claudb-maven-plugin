@@ -16,17 +16,17 @@ import com.github.tonivade.resp.RespServer;
 
 public class StopClauDBMojoTest extends AbstractMojoTestCase {
 
-    public void testExecute() throws Exception {
-        File pom = getTestFile("src/test/resources/test-pom.xml");
+  public void testExecute() throws Exception {
+    File pom = getTestFile("src/test/resources/test-pom.xml");
 
-        StopClauDBMojo stop = (StopClauDBMojo) lookupMojo("stop", pom);
+    StopClauDBMojo stop = (StopClauDBMojo) lookupMojo("stop", pom);
 
-        RespServer server = mock(RespServer.class);
-        stop.setPluginContext(new HashMap<>());
-        stop.getPluginContext().put(ClauDBMojo.CLAUDB_SERVER, server);
+    RespServer server = mock(RespServer.class);
+    stop.setPluginContext(new HashMap<>());
+    stop.getPluginContext().put(ClauDBMojo.CLAUDB_SERVER, server);
 
-        stop.execute();
+    stop.execute();
 
-        verify(server).stop();
-    }
+    verify(server).stop();
+  }
 }

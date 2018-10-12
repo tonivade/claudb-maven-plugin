@@ -17,15 +17,15 @@ import com.github.tonivade.resp.RespServer;
 @Mojo(name = "stop", defaultPhase = LifecyclePhase.NONE)
 public class StopClauDBMojo extends AbstractMojo {
 
-    @Override
-    public void execute() throws MojoExecutionException, MojoFailureException {
-        RespServer server = (RespServer) getPluginContext().get(CLAUDB_SERVER);
+  @Override
+  public void execute() throws MojoExecutionException, MojoFailureException {
+    RespServer server = (RespServer) getPluginContext().get(CLAUDB_SERVER);
 
-        if (server != null) {
-            getLog().info("Stopping claudb server");
-            server.stop();
-        } else {
-            getLog().warn("no server found");
-        }
+    if (server != null) {
+      getLog().info("Stopping claudb server");
+      server.stop();
+    } else {
+      getLog().warn("no server found");
     }
+  }
 }
