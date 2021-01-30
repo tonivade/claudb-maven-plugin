@@ -9,9 +9,6 @@ import java.util.HashMap;
 
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 
-import com.github.tonivade.claudb.maven.RunClauDBMojo;
-import com.github.tonivade.claudb.maven.ClauDBMojo;
-
 public class RunClauDBMojoTest extends AbstractMojoTestCase {
 
   public void testExecute() throws Exception {
