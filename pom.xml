@@ -9,7 +9,7 @@
   <properties>
     <maven.version>3.8.1</maven.version>
     <junit.jupiter.version>5.7.1</junit.jupiter.version>
-    <junit.vintage.version>5.7.1</junit.vintage.version>
+    <junit.vintage.version>5.7.2</junit.vintage.version>
   </properties>
 
   <repositories>
