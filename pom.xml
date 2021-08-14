@@ -10,6 +10,7 @@
     <maven.version>3.8.1</maven.version>
     <junit.jupiter.version>5.7.2</junit.jupiter.version>
     <junit.vintage.version>5.7.2</junit.vintage.version>
+    <claudb.version>1.8.1</claudb.version>
   </properties>
 
   <repositories>
@@ -40,7 +41,7 @@
     <dependency>
       <groupId>com.github.tonivade</groupId>
       <artifactId>claudb</artifactId>
-      <version>1.8.1-SNAPSHOT</version>
+      <version>${claudb.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
