@@ -10,7 +10,7 @@
     <maven.version>3.8.6</maven.version>
     <junit.jupiter.version>5.9.1</junit.jupiter.version>
     <junit.vintage.version>5.9.1</junit.vintage.version>
-    <claudb.version>2.0-SNAPSHOT</claudb.version>
+    <claudb.version>2.0.1</claudb.version>
   </properties>
 
   <repositories>
