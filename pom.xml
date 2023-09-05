@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.tonivade</groupId>
   <artifactId>claudb-maven-plugin</artifactId>
-  <version>2.2-SNAPSHOT</version>
+  <version>2.1.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <properties>
     <maven.version>3.9.4</maven.version>
     <junit.jupiter.version>5.9.3</junit.jupiter.version>
     <junit.vintage.version>5.9.3</junit.vintage.version>
-    <claudb.version>2.1</claudb.version>
+    <claudb.version>2.1.1-SNAPSHOT</claudb.version>
   </properties>
 
   <repositories>
