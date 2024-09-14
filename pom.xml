@@ -11,6 +11,7 @@
     <junit.jupiter.version>5.9.3</junit.jupiter.version>
     <junit.vintage.version>5.9.3</junit.vintage.version>
     <claudb.version>2.3</claudb.version>
+    <toolchain.jdk.version>[1.8,9)</toolchain.jdk.version>
   </properties>
 
   <repositories>
@@ -134,6 +135,18 @@
             <excludeTags>slow</excludeTags>
           </properties>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-toolchains-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>select-jdk-toolchain</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
