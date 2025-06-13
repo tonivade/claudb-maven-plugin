@@ -10,7 +10,7 @@
     <maven.version>3.9.9</maven.version>
     <junit.jupiter.version>5.9.3</junit.jupiter.version>
     <junit.vintage.version>5.9.3</junit.vintage.version>
-    <claudb.version>2.4-SNAPSHOT</claudb.version>
+    <claudb.version>2.5-SNAPSHOT</claudb.version>
     <toolchain.jdk.version>[1.8,9)</toolchain.jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
