@@ -8,7 +8,7 @@
 
   <properties>
     <maven.version>3.9.11</maven.version>
-    <junit.version>5.13.3</junit.version>
+    <junit.version>5.13.4</junit.version>
     <claudb.version>2.5-SNAPSHOT</claudb.version>
     <toolchain.jdk.version>[1.8,9)</toolchain.jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
