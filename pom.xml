@@ -7,7 +7,7 @@
   <packaging>maven-plugin</packaging>
 
   <properties>
-    <maven.version>3.9.13</maven.version>
+    <maven.version>3.9.14</maven.version>
     <junit.version>5.14.2</junit.version>
     <claudb.version>3.0-SNAPSHOT</claudb.version>
     <toolchain.jdk.version>[11,12)</toolchain.jdk.version>
