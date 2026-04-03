@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.tonivade</groupId>
   <artifactId>claudb-maven-plugin</artifactId>
-  <version>2.4-SNAPSHOT</version>
+  <version>3.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <properties>
     <maven.version>3.9.14</maven.version>
     <junit.version>5.14.2</junit.version>
-    <claudb.version>3.0-SNAPSHOT</claudb.version>
+    <claudb.version>3.0</claudb.version>
     <toolchain.jdk.version>[11,12)</toolchain.jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
